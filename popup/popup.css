@@ -1,15 +1,15 @@
 .succeed{
-    color: hsla(0, 0, 90%, 1);
+    color: hsla(0, 0%, 90%, 1);
     background-color: hsla(90, 50%, 40%, 1);
 }
 
 .error{
-    color: hsla(0, 0, 90%, 1);
+    color: hsla(0, 0%, 90%, 1);
     background-color: hsla(0, 49%, 40%, 1);
 }
 
 .processing{
-    color: hsla(0, 0, 0%, 0.9);
+    color: hsla(0, 0%, 0%, 0.9);
 }
 
 .error_reason{

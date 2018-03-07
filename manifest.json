@@ -25,7 +25,7 @@
         "*://*.esa.io/posts/*"
       ],
       "js":[
-        "content_scripts/copy_html_to_clipboard.js"
+        "content_scripts/get_html.js"
       ]
     }
   ],
