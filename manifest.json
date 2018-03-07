@@ -12,10 +12,11 @@
   "page_action" : {
     "default_icon":{
       "16" : "icons/16.png",
+      "19" : "icons/19.png",
       "24" : "icons/24.png",
       "32" : "icons/32.png"
     },
-    "default_title" : "copy HTML to clipboard"
+    "default_title" : "copy esa HTML to clipboard"
   },
   "content_scripts":[
     {
@@ -23,7 +24,7 @@
         "*://*.esa.io/posts/*"
       ],
       "js":[
-        "scripts/copy_html_to_clipboard.js"
+        "content_scripts/copy_html_to_clipboard.js"
       ]
     }
   ],
