@@ -28,6 +28,7 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.sendMessage(tabs[0].id, {name:'get_html'}, function(response){
         console.log(response);
         chrome.runtime.sendMessage({name:'clip_html', html:response.html}, function(resp){
+            console.log(resp);
             if(resp.result){
                 showSucceed();
             }

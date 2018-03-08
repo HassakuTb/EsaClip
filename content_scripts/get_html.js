@@ -2,7 +2,9 @@ function getHtml(){
     const markdown = document.getElementsByClassName('markdown');
     console.log(markdown);
 
-    return markdown[0].innerHtml;
+    const html = markdown[0].innerHtml.toString();
+    console.log(html);
+    return html;
 }
 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
@@ -11,5 +13,5 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
         sendResponse({html : getHtml()});
     }
 
-    return true;
+    return false;
 });

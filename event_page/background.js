@@ -1,10 +1,10 @@
 function copyStringToClipboard(str){
-    let texaArea = document.createElement('textarea');
-    texaArea.value = str;
-    document.body.appendChild(textarea);
-    texaArea.select();
+    let textArea = document.createElement('textarea');
+    textArea.value = str;
+    document.body.appendChild(textArea);
+    textArea.select();
     const result = document.execCommand('copy');
-    texaArea.parentElement.removeChild(textArea);
+    //textArea.parentElement.removeChild(textArea);
 
     return result;
 }
@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
         sendResponse({result : copyStringToClipboard(request.html)});
     }
 
-    return true;
+    return false;
 });
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab){
