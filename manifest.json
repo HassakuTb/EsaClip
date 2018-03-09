@@ -2,7 +2,7 @@
   "manifest_version" : 2,
   "name" : "esa clip",
   "short_name" : "esa clip",
-  "version" : "0.0.0",
+  "version" : "0.0.1",
   "description" : "Copy HTML to clipboard from esa.io post",
   "icons" : {
     "16" : "icons/16.png",
