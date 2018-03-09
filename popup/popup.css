@@ -1,17 +1,16 @@
 .succeed{
-    color: hsla(0, 0%, 90%, 1);
+    color: hsla(0, 0%, 100%, 1);
     background-color: hsla(90, 50%, 40%, 1);
+    padding: 20px;
 }
 
 .error{
-    color: hsla(0, 0%, 90%, 1);
+    color: hsla(0, 0%, 100%, 1);
     background-color: hsla(0, 49%, 40%, 1);
+    padding: 20px;
 }
 
 .processing{
     color: hsla(0, 0%, 0%, 0.9);
-}
-
-.error_reason{
-    color: hsla(0, 0, 0%, 0.7);
+    padding: 20px;
 }
