@@ -11,5 +11,5 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse){
         sendResponse({html : getHtml()});
     }
 
-    return true;
+    return false;
 });
